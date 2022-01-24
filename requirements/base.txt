@@ -23,3 +23,5 @@ drf-spectacular==0.21.1
 django-taggit==2.0.0  # https://github.com/jazzband/django-taggit
 django-taggit-serializer==0.1.7  # https://github.com/glemmaPaul/django-taggit-serializer
 django-autoslug==1.9.8  # https://github.com/justinmayer/django-autoslug
+factory-boy==3.2.1  # https://github.com/FactoryBoy/factory_boy
+Faker==11.3.0  # https://github.com/joke2k/faker
