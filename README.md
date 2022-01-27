@@ -2,6 +2,20 @@
 
 Test for frontend developer candidates at the African Cities Lab
 
+## Frontend Requirements
+* Install [Node](https://nodejs.org/en/download/)
+
+## Setup Frontend
+* Go to react folder `cd frontend-reactjs`
+* Install dependecies `npm install`
+* Start frontend `npm start`
+
+## Images
+![1](https://github.com/nabilraimi/acl-frontend-test/blob/main/frontend-reactjs/public/Capture%20d%E2%80%99e%CC%81cran%202022-01-27%20a%CC%80%206.18.34%20PM.png)
+![2](https://github.com/nabilraimi/acl-frontend-test/blob/main/frontend-reactjs/public/Capture%20d%E2%80%99e%CC%81cran%202022-01-27%20a%CC%80%206.14.46%20PM.png)
+![3](https://github.com/nabilraimi/acl-frontend-test/blob/main/frontend-reactjs/public/Capture%20d%E2%80%99e%CC%81cran%202022-01-27%20a%CC%80%206.14.30%20PM.png)
+
+
 ## Assignment description
 
 This repository contains an example of a REST API for a course catalog, which is deployed to [acl-frontend-test.sensecity-africa.io/api](https://acl-frontend-test.sensecity-africa.io/api). The objective of the assignment is to create the frontend for the course catalog at the [acl-frontend-test.sensecity-africa.io/api/courses](https://acl-frontend-test.sensecity-africa.io/api/courses) endpoint. You can use any framework to accomplish that, i.e., django templates (e.g., with Bootstrap, Foundation, or similar), React, Angular, Vue.js and the like.

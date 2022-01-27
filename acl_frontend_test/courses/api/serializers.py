@@ -45,3 +45,4 @@ class CourseSerializer(TaggitSerializer, serializers.ModelSerializer):
         extra_kwargs = {
             "url": {"view_name": "api:course-detail", "lookup_field": "code"}
         }
+        
