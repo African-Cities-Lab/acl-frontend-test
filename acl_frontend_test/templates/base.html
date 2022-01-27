@@ -25,6 +25,7 @@
             <!-- Your stuff: Third-party CSS libraries go here -->
             <!-- This file stores project-specific CSS -->
             <link href="{% static 'css/project.css' %}" rel="stylesheet" />
+            <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
         {% endblock css %}
         <!-- Le javascript
     ================================================== -->
@@ -40,7 +41,7 @@
     </head>
     <body>
         <div class="mb-1">
-            <nav class="navbar navbar-expand-md navbar-light bg-white sticky">
+            <nav class="navbar main-navbar navbar-expand-md navbar-light bg-white sticky">
                 <div class="container-fluid">
                     <button class="navbar-toggler navbar-toggler-right"
                             type="button"
@@ -51,12 +52,18 @@
                             aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="{% url 'home' %}">African Cities Lab frontend developer test</a>
+                    <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/acl_logo.jpg' %}" alt=""> </a>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="{% url 'home' %}">
                                     Home
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{% url 'course_list' %}">
+                                    Courses
                                     <span class="visually-hidden">(current)</span>
                                 </a>
                             </li>
@@ -90,7 +97,7 @@
                 </div>
             </nav>
         </div>
-        <div class="container">
+        <div>
             {% if messages %}
                 {% for message in messages %}
                     <div class="alert alert-dismissible {% if message.tags %}alert-{{ message.tags }}{% endif %}">

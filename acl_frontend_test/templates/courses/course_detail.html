@@ -2,11 +2,70 @@
 {% load static %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            Hahahah
+<div class="container mt-5 mb-5">
+  <section class="course-header w-100px-0 px-sm-3">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-lg-6 d-flex align-items-center">
+          <h2>{{ object.title }}</h2>
         </div>
+        <div class="col-lg-6">
+          <img src="../../static/images/Pattern1.png" alt="" class="img-fluid header-pattern">
+          <img src="../../static/images/Image.png" alt="" class="img-fluid header-img">
+        </div>
+      </div>
     </div>
+  </section>
+
+  <div class="card shadow rounded-3 mt-4">
+    <div class="card-header">
+      <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-description-tab" data-bs-toggle="pill" data-bs-target="#pills-description" type="button" role="tab" aria-controls="pills-description" aria-selected="true">Description</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-instructors-tab" data-bs-toggle="pill" data-bs-target="#pills-instructors" type="button" role="tab" aria-controls="pills-instructors" aria-selected="false">Instructors</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-organisations-tab" data-bs-toggle="pill" data-bs-target="#pills-organisations" type="button" role="tab" aria-controls="pills-organisations" aria-selected="false">Organisations</button>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab">
+          {{object.full_description}}
+        </div>
+        <div class="tab-pane fade" id="pills-instructors" role="tabpanel" aria-labelledby="pills-instructors-tab">
+          <!-- Card START -->
+								<div class="card mb-0 mb-md-4">
+									<div class="row g-0 align-items-center">
+										<div class="col-md-5">
+											<!-- Image -->
+											<img src="../../static/images/01.jpg" class="img-fluid rounded-3" alt="instructor-image">
+										</div>
+										<div class="col-md-7">
+											<!-- Card body -->
+											<div class="card-body">
+												<!-- Title -->
+												<h3 class="card-title mb-0">Louis Ferguson</h3>
+												<p class="mb-2">Instructor of Marketing</p>
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Card END -->
+        </div>
+        <div class="tab-pane fade" id="pills-organisations" role="tabpanel" aria-labelledby="pills-organisations-tab">
+          {{object.instructors}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 </div>
+
 {% endblock content %}
