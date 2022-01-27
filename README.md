@@ -11,9 +11,9 @@ Test for frontend developer candidates at the African Cities Lab
 * Start frontend `npm start`
 
 ## Images
-[1](https://github.com/nabilraimi/acl-frontend-test/blob/main/frontend-reactjs/public/Capture%20d%E2%80%99e%CC%81cran%202022-01-27%20a%CC%80%206.18.34%20PM.png)
-[2](https://github.com/nabilraimi/acl-frontend-test/blob/main/frontend-reactjs/public/Capture%20d%E2%80%99e%CC%81cran%202022-01-27%20a%CC%80%206.14.46%20PM.png)
-[3](https://github.com/nabilraimi/acl-frontend-test/blob/main/frontend-reactjs/public/Capture%20d%E2%80%99e%CC%81cran%202022-01-27%20a%CC%80%206.14.30%20PM.png)
+![1](https://github.com/nabilraimi/acl-frontend-test/blob/main/frontend-reactjs/public/Capture%20d%E2%80%99e%CC%81cran%202022-01-27%20a%CC%80%206.18.34%20PM.png)
+![2](https://github.com/nabilraimi/acl-frontend-test/blob/main/frontend-reactjs/public/Capture%20d%E2%80%99e%CC%81cran%202022-01-27%20a%CC%80%206.14.46%20PM.png)
+![3](https://github.com/nabilraimi/acl-frontend-test/blob/main/frontend-reactjs/public/Capture%20d%E2%80%99e%CC%81cran%202022-01-27%20a%CC%80%206.14.30%20PM.png)
 
 
 ## Assignment description
