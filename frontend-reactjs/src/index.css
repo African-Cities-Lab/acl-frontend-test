@@ -1,0 +1,195 @@
+html {
+  min-height: 100%;
+  position: relative;
+  overflow-y: scroll; 
+}
+body {
+  font-family: "Montserrat",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  background-color: #fff;
+}
+a, a:hover, a:active {
+  text-decoration: none; 
+  cursor: pointer;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #0e0e0e;
+}
+.big-title > h1 {
+  font-weight: 700; font-size: 50px;
+} 
+.acl-courses__grid {
+  display: flex; flex-wrap: wrap;
+  margin-top: 55px; 
+}
+.acl-courses__item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; margin: 0 0 50px;
+}
+.acl-courses__item .acl-courses_item__img {
+  width: 100%; height: 215px;
+}
+.acl-courses__item .acl-courses_item__img > img {
+  object-fit: cover; width: 86%; height: 100%;
+}
+.acl-courses_item__preview .acl-courses_item__categories > span {
+  color: #aaa; text-transform: uppercase;
+  padding-right: 8px; font-weight: 600;
+}
+.acl-courses_item__preview .acl-courses_item__title h4 {
+  font-size: 22px; line-height: 22px; 
+  font-weight: 600;
+  margin: 0 0 15px;
+  cursor: pointer;
+}
+.acl-courses_item__preview .acl-courses_item__title h4:hover {
+  color: #DC3545;
+}
+.acl-courses_item__preview .acl-courses_item__excerpt {
+  margin: 0 0 20px; line-height: 26px; color: #777;
+}
+.acl-courses_item__terms i {
+  font-size: 22px; padding-top: 5px;
+  margin: 0 15px 0 2px; font-size: 30px; color: #FFC104;
+}
+.single-course__page {
+  margin: 3rem 0;
+}
+.acl-courses_item__title {
+  padding-top: 10px;
+}
+.acl-courses_item__term_name {
+  padding-right: 3rem;
+}
+.acl-courses_item__term_name span {
+  color: #777; font-size: 12px; display: block;
+} 
+.acl-courses_item__term_name h6 {
+  padding-right: 8px;
+  display: inline-block;
+}
+.acl-single_course__title > h1 {
+  margin-bottom: 50px; line-height: 55px;
+   letter-spacing: -.4px; font-weight: 700; 
+   font-size: 50px;
+}
+.acl-btn_primary {
+  margin-top: 4px; margin-left: auto;
+  text-align: right;
+}
+.acl-btn_primary > a {
+  width: 100%; background-color: #DC3545;
+  max-width: 301px; min-width: 135px;  
+  text-transform: uppercase;
+  font-weight: 700; justify-content: center; padding: 22px 5%;
+  color: #fff;
+  text-align: center; 
+  height: 75px; font-size: 18px; letter-spacing: -.2px;
+}
+.acl-single_course__img {
+  margin-bottom: 1.5rem;
+}
+.acl-single_course__img img {
+  object-fit: cover;
+}
+.acl-single_course__content-section {
+  margin: 3rem 0
+}
+.acl-single_course__content-section h3 {
+  font-size: 35px;
+}
+.acl-single_course__content-section p {
+  line-height: 26px; font-size: 16px;
+}
+.acl-single_course__more {
+  padding-bottom: 15px;
+}
+.about-instructor img {
+  float: left;
+  margin-right: 15px;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  max-width: 100px;
+  border-radius: 50%
+}
+.about-company {
+  display: inline-block;
+}
+.about-company img {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin-right: 15px;
+  max-width: 100px;
+  object-fit: contain;
+}
+.about-instructor h4 {
+  margin: 11px 0 2px;
+  padding-top: 28px;
+}
+.about-instructor .instructor-job {
+  margin-bottom: 6px; font-size: 16px;
+}
+.instructor-bio {
+  margin-top: 60px;
+}
+.acl-courses_filters__wrapper {
+  margin: 55px 20px 20px 0;
+}
+.acl-courses_filters > h6 {
+  font-size: 16px; 
+  font-weight: 700; 
+  margin-bottom: 20px;
+}
+.acl-courses_filters ul {
+  border: 1px solid rgba(0,0,0,0.05); 
+  margin-bottom: 30px; 
+  list-style-type: none;
+  margin: 0; padding: 0;
+}
+.acl-courses_filters ul li a {
+  display: block; transition: all .3s ease-in-out;
+  font-size: 14px;
+  line-height: 40px;
+  color: rgba(0,0,0,0.7);
+  padding-left: 25px;
+  border-bottom: 1px solid rgba(0,0,0,0.05); 
+}
+.acl-courses_filters ul li a.active {
+  background-color: #FFC104; 
+  color: #fff; 
+}
+.acl-courses_filters ul li a.active:hover{
+  color: #fff; 
+}
+.acl-courses_filters ul li a:hover{
+  color: #FFC104; 
+  padding-left: 50px;
+}
+#main-nav {
+  background-color: #000;
+}
+.masthead {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url(https://fra1.digitaloceanspaces.com/acl-temp-production/static/images/assets/header_bg.jpeg);
+  text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+.masthead .intro-text {
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+.masthead .intro-text .intro-lead-in h1{
+  font-size: 44px;
+}
+.masthead .intro-text .intro-lead-in p {
+  font-size: 16px; 
+}

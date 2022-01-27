@@ -52,6 +52,9 @@ ROOT_URLCONF = "config.urls"
 # https://docs.djangoproject.com/en/dev/ref/settings/#wsgi-application
 WSGI_APPLICATION = "config.wsgi.application"
 
+#
+CORS_ORIGIN_ALLOW_ALL=True
+
 # APPS
 # ------------------------------------------------------------------------------
 DJANGO_APPS = [
@@ -63,7 +66,7 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
     # "django.contrib.humanize", # Handy template tags
     "django.contrib.admin",
-    "django.forms",
+    "django.forms", 
 ]
 THIRD_PARTY_APPS = [
     "crispy_forms",
@@ -140,7 +143,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.common.BrokenLinkEmailsMiddleware",
-    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware", 
 ]
 
 # STATIC

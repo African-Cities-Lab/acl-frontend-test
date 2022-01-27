@@ -5,8 +5,7 @@ from acl_frontend_test.courses.api.serializers import (
     InstructorSerializer,
     OrganizationSerializer,
 )
-from acl_frontend_test.courses.models import Course, Instructor, Organization
-
+from acl_frontend_test.courses.models import Course, Instructor, Organization  
 
 class OrganizationViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = OrganizationSerializer
@@ -22,8 +21,8 @@ class InstructorViewSet(viewsets.ReadOnlyModelViewSet):
 
 class CourseViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = CourseSerializer
-    queryset = Course.objects.all()
-    lookup_field = "code"
+    queryset = Course.objects.all()  
+    lookup_field = "code" 
 
     def get_queryset(self):
         queryset = Course.objects.all()
