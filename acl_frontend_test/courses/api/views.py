@@ -1,3 +1,6 @@
+from re import template
+
+from rest_framework.response import Response
 from rest_framework import viewsets
 
 from acl_frontend_test.courses.api.serializers import (
@@ -30,5 +33,4 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet):
         category = self.request.query_params.get("category")
         if category is not None:
             queryset = queryset.filter(categories__name__in=[category])
-
-        return queryset
+        return Response(queryset, template_name="../../templates/courses/course_list.html")

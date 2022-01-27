@@ -18,6 +18,7 @@ urlpatterns = [
     path("users/", include("acl_frontend_test.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
+    path("courses/", include("acl_frontend_test.courses.urls", namespace="courses")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # API URLS
