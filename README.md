@@ -2,10 +2,10 @@
 
 Test for frontend developer candidates at the African Cities Lab
 
-##Frontend Requirements
+## Frontend Requirements
 * Install [Node](https://nodejs.org/en/download/)
 
-##Setup Frontend
+## Setup Frontend
 * Go to react folder `cd frontend-reactjs`
 * Install dependecies `npm install`
 * Start frontend `npm start`
