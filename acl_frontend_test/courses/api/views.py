@@ -1,4 +1,7 @@
+from re import template
+
 from rest_framework import viewsets
+from rest_framework.response import Response
 
 from acl_frontend_test.courses.api.serializers import (
     CourseSerializer,
